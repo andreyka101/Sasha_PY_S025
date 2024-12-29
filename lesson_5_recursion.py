@@ -1,3 +1,5 @@
+
+# функция возвращает функцию
 # def fun_1():
 #     print("run fun_1()")
 #     return fun_2()
@@ -10,6 +12,7 @@
 
 
 
+# функция возвращает функцию и передаёт ей значение
 # def fun_3(num_3_loc):
 #     num_3_loc += 1
 #     print("run fun_3() =" , num_3_loc)
@@ -24,6 +27,7 @@
 
 
 
+# рекурсия - функция возвращает саму себя
 # num_1 = 10
 # def fun_5():
 #     global num_1
@@ -38,7 +42,7 @@
 
 
 
-
+# функция возвращает саму себя и передаёт себе же изменённое значение
 # def fun_6(num_loc):
 #     num_loc -= 1
 #     print(num_loc)
@@ -50,38 +54,49 @@
 
 
 
-
-# def fun_8(num_loc , sum_answer = 0):
+# тоже саме, но обрабатываем дополнительную переменную sum_answer
+# def fun_7(num_loc , sum_answer = 0):
 #     num_loc -= 1
 #     # print(num_loc)
 #     if(num_loc > 0):
-#         return fun_8(num_loc , sum_answer + num_loc )
+#         return fun_7(num_loc , sum_answer + num_loc )
 #     print("end")
 #     return sum_answer
-# print(fun_8(10))
+# print(fun_7(10))
+
+
+
+# рекурсия обрабатывает список
+# def fun_8(arr_loc:list , answer = 0 , index = 0):
+#     if(index != len(arr_loc)):
+#         return fun_8(arr_loc , answer + arr_loc[index] , index + 1)
+#     return answer
+
+# arr = [1,2,3,4,5]
+# print(fun_8(arr))
 
 
 
 
-# def fun_8(num_loc , sum_answer = 0):
-#     num_loc -= 1
-#     # print(num_loc)
-#     if(num_loc > 0):
-#         return fun_8(num_loc , sum_answer + num_loc )
-#     print("end")
-#     return sum_answer
-# print(fun_8(10))
 
 
+# дз
+# номер 1
+# Напишите функцию для вычисления факториала числа
 
+# номер 2
+# Напишите программу для возведения числа n в степень m. 
+# нельзя использовать степень (**)
 
-def fun_8(arr_loc:list , answer = 0 , index = 0):
-    if(index != len(arr_loc)):
-        return fun_8(arr_loc , answer + arr_loc[index] , index + 1)
-    return answer
+# номер 3
+# напишите функцию которая принимает список и возвращает сумму всех чисел списка
 
-arr = [1,2,3,4,5]
-print(fun_8(arr))
+# номер 4
+# напишите функцию которая принимает два списка одинаковой длины.
+# Необходимо создать из них словарь таким образом, 
+# чтобы элементы первого списка были ключами, 
+# а элементы второго — соответственно значениями нашего словаря.
+# функция возвращает словарь
 
-
-
+# номер 5
+# Напишите функцию которая принимает список чисел и строк и возвращает список с удалёнными строками
