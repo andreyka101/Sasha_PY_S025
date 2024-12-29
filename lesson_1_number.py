@@ -34,11 +34,13 @@
 
 
 # функция это переменная
-# def fun_1() -> str:
-#     print("hello")
-#     return 4
+def fun_1() -> str:
+    print("hello")
+    return 4
 
 # print(fun_1)
+num_f = fun_1
+print(num_f())
 # print(type(fun_1))
 # print(fun_1())
 
@@ -53,13 +55,13 @@
 
 
 
-num = 8
-def fun_3():
-    # создаем свою локальную переменную num
-    num = 20
-    print(num)
-fun_3()
-print("num =" , num)
+# num = 8
+# def fun_3():
+#     # создаем свою локальную переменную num
+#     num = 20
+#     print(num)
+# fun_3()
+# print("num =" , num)
 
 
 

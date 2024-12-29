@@ -134,16 +134,21 @@ obj = {
 
 
 
+
+# def fun():
+#     print("ok")
+
 # замена if для краткого написания
+# inp = input("=== ")
 # obj_if = {
-#     "q":1,
+#     "q":fun,
 #     "w":2,
 #     "e":3,
 #     "r":4,
 #     "t":5,
 # }
 # num = obj_if[inp]
-# print(num)
+# print(num())
 
 
 
