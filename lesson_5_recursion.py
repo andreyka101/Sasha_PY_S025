@@ -19,7 +19,7 @@
 #     return fun_4(num_3_loc)
 
 # def fun_4(num_4_loc):
-#     num_4_loc += 1
+#     num_4_loc *= 2
 #     print("run fun_4() =" , num_4_loc)
 #     return num_4_loc
 
@@ -32,6 +32,7 @@
 # def fun_5():
 #     global num_1
 #     num_1 -= 1
+#     print(num_1)
 #     if(num_1 > 0):
 #         return fun_5()
 #     print("end")
@@ -39,15 +40,15 @@
     
 # print(fun_5())
 # print(num_1)
+# fun_5()
 
 
 
 # функция возвращает саму себя и передаёт себе же изменённое значение
 # def fun_6(num_loc):
-#     num_loc -= 1
-#     print(num_loc)
+#     # print(num_loc)
 #     if(num_loc > 0):
-#         return fun_6(num_loc)
+#         return fun_6(num_loc - 1)
 #     print("end")
 #     return num_loc
 # print(fun_6(10))
@@ -56,10 +57,9 @@
 
 # тоже саме, но обрабатываем дополнительную переменную sum_answer
 # def fun_7(num_loc , sum_answer = 0):
-#     num_loc -= 1
-#     # print(num_loc)
+#     print(num_loc)
 #     if(num_loc > 0):
-#         return fun_7(num_loc , sum_answer + num_loc )
+#         return fun_7(num_loc - 1 , sum_answer + num_loc )
 #     print("end")
 #     return sum_answer
 # print(fun_7(10))
@@ -88,8 +88,15 @@
 # Напишите программу для возведения числа n в степень m. 
 # нельзя использовать степень (**)
 
+# def fun(num , index , save = 1):
+#     if(index > 0):
+#         # print(index)
+#         return fun(num , index - 1 , save * num)
+#     return save
+# print(fun(2 , 3))
+
 # номер 3
-# напишите функцию которая принимает список и возвращает сумму всех чисел списка
+#! напишите функцию которая принимает список
 
 # номер 4
 # напишите функцию которая принимает два списка одинаковой длины.
