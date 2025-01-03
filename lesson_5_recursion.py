@@ -84,6 +84,14 @@
 # номер 1
 # Напишите функцию для вычисления факториала числа
 
+
+def fun(num , save = 1):
+    if(num > 0):
+        # print(index)
+        return fun(num - 1 , save * num)
+    return save
+print(fun(6))
+
 # номер 2
 # Напишите программу для возведения числа n в степень m. 
 # нельзя использовать степень (**)
@@ -95,8 +103,31 @@
 #     return save
 # print(fun(2 , 3))
 
-# номер 3
+#TODO -  номер 3
 #! напишите функцию которая принимает список
+
+
+
+
+
+
+# def array(arr,arr_2 , index = 0 , save_dist = {}):
+#     if len(arr) != len(arr_2):
+#         return None
+#     print("1")
+#     print("1")
+#     print("1")
+#     print("1")
+#     print("1")
+#     print("1")
+        
+# obj = {}
+# index = 0
+# arr_1s = [1,2,3,4]
+# arr_2s = [9,7,6,5]
+# obj[arr_1s[index]] = arr_2s[index]
+
+
 
 # номер 4
 # напишите функцию которая принимает два списка одинаковой длины.
