@@ -92,7 +92,76 @@
 
 
 
+# def fun_2(el):
+#     print(el)
+#     return el * 2
+# arr = [1,2,3,4,5,6]
+# arr = list(map(fun_2 , arr))
+# print(type(arr))
+# print(arr)
 
+
+
+
+# def fun_3(x ,y):
+#     print(x , y)
+#     return x + y
+
+# arr_2 = [1,5,3,7,2]
+# arr_3 = [9,4,3,8,3]
+
+# arr_4 = list(map(fun_3 , arr_2 ,arr_3))
+
+# print(arr_4)
+
+
+
+
+# arr_5 = [1,5,3,7,2]
+# arr_5 = list(map(lambda x: x*10 , arr_5))
+# print(arr_5)
+
+
+
+
+# arr_1 = [1,5,3,7,2]
+# arr_2 = [9,4,3,8,3]
+# arr_3 = list(map(lambda x , y : x + y , arr_1 , arr_2))
+# print(arr_3)
+
+
+
+
+# arr_1 = [1,2,3,4,5,6]
+# arr_3 = list(filter(lambda x: x % 2 == 0 , arr_1))
+# print(arr_3)
+
+
+
+
+# arr_1 = [
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9],
+#          ]
+# def fun_4(x):
+#     print(x)
+#     return list(map(lambda r: r * 2 , x))
+# arr_3 = list(map(fun_4 , arr_1))
+# print("---------------")
+# print(arr_3)
+
+
+
+
+arr_1 = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+         ]
+
+arr_3 = list(map(lambda arr_x : list(map(lambda n : n * 3 , arr_x)) , arr_1))
+print(arr_3)
 
 
 
