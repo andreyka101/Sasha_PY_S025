@@ -194,3 +194,13 @@ print(arr_3)
 # номер 4
 # дан список в котором списки с числами ,кzаждое число списка умножить на num
 # переменная num прибавляется на 1 с каждым новым списком (num изначально равен 2)
+
+
+nested_lists = [[1, 2], [3, 4], [5, 6]]  
+num = 2
+
+def fun(x):
+    num+=1
+    return x + num
+result = [list(map(lambda x: x * num, sublist)) for num, sublist in enumerate(nested_lists, start=num)]
+print(result)
